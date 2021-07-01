@@ -1,0 +1,65 @@
+Model - T1680
+
+•    Màu sắc Kem Nâu, Kem Cốm, Kem Môn, Xanh Ngọc
+
+•    Dòng sản phẩm Quạt treo tường.
+
+•    Tốc độ gió 3 tốc độ
+
+•    Cánh quạt 3 lá
+
+•    Chuyển hướng cơ.
+
+Sải cánh
+
+ 
+
+Điện áp
+
+ 
+
+Công suất
+
+ 
+
+Lưu lượng gió
+
+ 
+
+Khối lượng tịnh
+
+ 
+
+Qui cách thùng (cái/thùng)
+
+ 
+
+Kích thước thùng (D x R x C)
+
+ 
+
+39 cm
+
+ 
+
+220V/50Hz
+
+ 
+
+47 W
+
+ 
+
+64.4 m3/min
+
+ 
+
+2.8 kg
+
+ 
+
+4 cái
+
+ 
+
+480 x 300 x 245 (mm)

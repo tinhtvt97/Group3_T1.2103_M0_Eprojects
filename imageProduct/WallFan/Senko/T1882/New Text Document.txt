@@ -1,0 +1,68 @@
+Model - T1882
+
+DÒNG SẢN PHẨM F25
+
+•    Màu sắc: Đen Cam
+
+•    Dòng sản phẩm: Quạt treo tường.
+
+•    Tốc độ gió: 3 tốc độ
+
+•    Cánh quạt: 5 lá
+
+•    Chuyển hướng cơ.
+
+
+Sải cánh
+
+ 
+
+Điện áp
+
+ 
+
+Công suất
+
+ 
+
+Lưu lượng gió
+
+ 
+
+Khối lượng tịnh
+
+ 
+
+Qui cách thùng (cái/thùng)
+
+ 
+
+Kích thước thùng (D x R x C)
+
+ 
+
+43 cm
+
+ 
+
+220V/50Hz
+
+ 
+
+65 W
+
+ 
+
+89 m3/min
+
+ 
+
+3.6 kg
+
+ 
+
+2 cái
+
+ 
+
+530 x 255 x 490 (mm)
