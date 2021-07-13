@@ -219,7 +219,7 @@ var products_JSON=[
         "Id":"p13",
         "BrandId":"asia",
         "Type":"desk",
-        "Pic":"../hình/hinh quat/quat-ban-ASIAvina-B16001-XV1-2.png",
+        "Pic":"../hình/imge-product/B16001-XV1/B16001-XV1 (1).jpg",
         "Name":"B16001-XV1",
         "Rating":4,
         "TotalRating":88,
