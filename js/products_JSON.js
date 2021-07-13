@@ -4,7 +4,7 @@ var products_JSON=[
         "BrandId":"asia",
         "Type":"stand",
         "Pic":"../hình/hinh quat/D16028.png",
-        "Name":"D16028",
+        "Name":"D16028-XV0",
         "Rating":4,
         "TotalRating":2,
         "Sizeofbladas":"40cm",
@@ -15,7 +15,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$75.00."
+        "Price":75
     },
     {
         "Id":"p02",
@@ -33,7 +33,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$75.00."
+        "Price":75
     },
     {
         "Id":"p03",
@@ -51,14 +51,14 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$75.00."
+        "Price":75
     },
     {
         "Id":"p04",
         "BrandId":"asia",
         "Type":"slide",
         "Pic":"../hình/hinh quat/A16009-DV1.webp",
-        "Name":"A16009-DV1",
+        "Name":"A16009-XV0",
         "Rating":4,
         "TotalRating":11,
         "Sizeofbladas":"40cm",
@@ -69,14 +69,14 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$70.00."
+        "Price":70
     },
     {
         "Id":"p05",
         "BrandId":"asia",
         "Type":"slide",
         "Pic":"../hình/hinh quat/quat-lung-a16018.webp",
-        "Name":"A16018",
+        "Name":"A16018-XV0",
         "Rating":4,
         "TotalRating":56,
         "Sizeofbladas":"40cm",
@@ -87,14 +87,14 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$70.00."
+        "Price":70
     },
     {
         "Id":"p06",
         "BrandId":"asia",
         "Type":"stand",
         "Pic":"../hình/hinh quat/D18001.webp",
-        "Name":"D18001",
+        "Name":"D18001-DV0",
         "Rating":2,
         "TotalRating":25,
         "Sizeofbladas":"40cm",
@@ -105,7 +105,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$75.00."
+        "Price":75
     },
     {
         "Id":"p07",
@@ -123,7 +123,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$25.00."
+        "Price":25
     },
     {
         "Id":"p08",
@@ -141,7 +141,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$30.00."
+        "Price":30
     },
     {
         "Id":"p09",
@@ -159,14 +159,14 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$50.00."
+        "Price":50
     },
     {
         "Id":"p10",
         "BrandId":"asia",
-        "Type":"stand",
+        "Type":"wall",
         "Pic":"../hình/hinh quat/L18002-1.png",
-        "Name":"L18002",
+        "Name":"L18002-DV0",
         "Rating":4,
         "TotalRating":6,
         "Sizeofbladas":"40cm",
@@ -177,7 +177,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "rice":"$26.00."
+        "Price":26
     },
     {
         "Id":"p11",
@@ -195,7 +195,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$45.00."
+        "Price":45
     },
     {
         "Id":"p12",
@@ -213,13 +213,13 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$60.00."
+        "Price":60
     },
     {
         "Id":"p13",
         "BrandId":"asia",
         "Type":"desk",
-        "Pic":"../hình/hinh quat/quat-ban-ASIAvina-B16001-XV1-2.webp",
+        "Pic":"../hình/hinh quat/quat-ban-ASIAvina-B16001-XV1-2.png",
         "Name":"B16001-XV1",
         "Rating":4,
         "TotalRating":88,
@@ -231,14 +231,14 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$50.00."
+        "Price":50
     },
     {
         "Id":"p14",
         "BrandId":"asia",
         "Type":"celling",
         "Pic":"../hình/hinh quat/J56004-1.webp",
-        "Name":"D16028",
+        "Name":"D16028-XV0",
         "Rating":4,
         "TotalRating":23,
         "Sizeofbladas":"40cm",
@@ -249,7 +249,7 @@ var products_JSON=[
         "Roundsperminute": 1200,
         "Numbeofspeeds": 3,
         "Switchtypes": "Rotation",
-        "Price":"$50.00."
+        "Price":50
     }
 ];
 
@@ -271,10 +271,10 @@ function getPageUrlId()
 var s = '';
 
     for (var v of products_JSON) {
-        var _rating='';
-        switch(v.rating){
+        var isRating='';
+        switch(v.Rating){
             case 1:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star"></i>'+
                 '<i style="color:red" class="bi bi-star"></i>'+
@@ -284,7 +284,7 @@ var s = '';
                 '</p>';
                 break;
             case 1.5:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-half"></i>'+
                 '<i style="color:red" class="bi bi-star"></i>'+
@@ -294,7 +294,7 @@ var s = '';
                 '</p>';
                 break;
             case 2:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star"></i>'+
@@ -304,7 +304,7 @@ var s = '';
                 '</p>';
                 break;
             case 2.5:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-half"></i>'+
@@ -314,7 +314,7 @@ var s = '';
                 '</p>';
                 break;
             case 3:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
@@ -324,7 +324,7 @@ var s = '';
                 '</p>';
                 break;
             case 3.5:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
@@ -334,7 +334,7 @@ var s = '';
                 '</p>';
                 break;
             case 4:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
@@ -344,7 +344,7 @@ var s = '';
                 '</p>';
                 break;
             case 4.5:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
@@ -354,7 +354,7 @@ var s = '';
                 '</p>';
                 break;
             case 5:
-                _rating+='<p>'+
+                isRating='<p>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
                 '<i style="color:red" class="bi bi-star-fill"></i>'+
@@ -368,12 +368,10 @@ var s = '';
             '<div class="content">'+
                 '<a href="detail.html?key1='+v.Id+'"><img src="'+v.Pic+'" class="card-img-top img-thumbnail" alt="image"></a>'+           
                 '<a href="#"><h5>'+v.Name+'</h5></a>'+            
-                '<div class="item-rating">'+_rating+
-                                
-                            '</div>'+
-                '<p class="card-text">'+v.Price+'</p>'+
-                '<div class="cart"><a href="html/productdetail.html" >View more..</a> </div>'+
-                '<a href="#" data-name="Asia D16028" data-price="75" class="add-to-cart btn btn-primary">Add to cart</a>'+
+                '<div class="item-rating">'+isRating+'</div>'+
+                '<p class="card-text">$'+v.Price+'.00</p>'+
+                '<div class="cart"><a href="html/productdetail.html" style="margin-right:90px" ><button style="padding:6px 10px;border:none;border-radius:3px;background-color:rgb(0,200,200);color:white;">View more..</button></a>'+
+                '<a href="#" data-name="Asia D16028" data-price="75" class="add-to-cart btn btn-primary">Add to cart</a></div>'+
             '</div>'+
         '</div>';
     }
@@ -601,26 +599,24 @@ function productsDetail()
 
   d+=  ' <div class="hero">'+
     '        <div class="row pic1">'+
-    '            <div class="col pic2">'+
+    '            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 pic2">'+
     ''+
     '                <div class="slider">'+
     '                    <div class="product">'+
     ''+
-    '                        <img src="../hình/image-product/A16009-DV1.png" alt="" onclick="clickme(this)">'+
-    '                        <img src="../hình/image-product/F16001-XV1.png" alt="" onclick="clickme(this)">'+
-    '                        <img src="../hình/image-product/D16028.png" alt="" onclick="clickme(this)">'+
-    '                       '+''+
+    '                        <img src="../hình/image-product/'+v.Name+'/'+v.Name+' (1).jpg" alt="" onclick="clickme(this)">\n'+
+    '                        <img src="../hình/image-product/'+v.Name+'/'+v.Name+' (2).jpg" alt="" onclick="clickme(this)">\n'+
+    '                        <img src="../hình/image-product/'+v.Name+'/'+v.Name+' (3).jpg" alt="" onclick="clickme(this)">\n'+
     '                    </div>'+
     '                    <div class="preview">'+
-                        '<img src="'+v.Pic+'" id="imagebox" alt="">'+''+
+    '                    <img src="'+v.Pic+'" id="imagebox" alt="">'+
     '                    </div>'+
     '                </div>'+
-    ''+
     '            </div>'+
   
-    '<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">'+ '<span class="name">Name: </span>'+
+    '<div class="col-xs-12 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-6 col-lg-offset-3 col-lg-5">'+ '<span class="name">Name: </span>'+
     '<span class="small_name">'+v.Name+'</span><br>'+
-    '<div class="price">Price:<span>$'+v.Price+'</span></div><br>'+
+    '<div class="price">Price:<span>$'+v.Price+'.00</span></div><br>'+
     '<h2>Infomation</h2>'+
     '<ul>'+
     ' <li>Size of blades: '+ v.Sizeofbladas+'</li>'+
@@ -632,6 +628,7 @@ function productsDetail()
     '<li>Number speeds: '+ v.Numbeofspeeds+'</li>'+
     ' <li>Switch types: '+ v.Switchtypes+'</li>'+
     '</ul>'+
+    '<a href="../Download_infomation_of_fan/'+v.Name+'_infomations.docx" download><i class="bi bi-download">  Download infomations</i></a>'+
     '<a href="checkout.html"  class="add-to-cart btn btn-primary">Buy now</a>'+
 '</div></div></div>' +
 '  <ul class="nav nav-tabs">'+
@@ -652,15 +649,11 @@ function productsDetail()
 '          <h3>comment</h3>'+
 
 '          <textarea name="" id="" cols="50" rows="10"></textarea>'+
-'          '+
 
-       '<div><button type="submit" class="btn btn-primary"> send</button></div>'+
+'           <div><button type="submit" class="btn btn-primary"> send</button></div>'+
 '        </div>'+
-'        '+
 '      </div>'+
 '    </div>'+
-'    '+
-'   '+
 '  </div>'+
 '</div>';
     brand = v.BrandId;     
