@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>  
+    <title>Số liệu</title>
+    <style>
+        #overview{
+            margin-top: 40vh;
+            margin-left: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="overview">
+        <div>
+          <div>
+              <i style="position:fixed;font-size:40px; color:white"><i id="transaction-count"> 100</i><i>%</i><i style="margin-left: 900px; color:rgb(11, 150, 214)">Tổng</i></i><i class="tong" style="width:1000px; height:50px; display:block; background-color:rgb(11, 150, 214); border:none; border-radius: 10px; margin-bottom: 5px;"></i>
+          </div>
+          
+          <div>
+            <i style="position:fixed; font-size:40px; color:white"><i id="customer-count"> 70</i><i>%</i><i id="nuocKhac" style="margin-left: 630px; color:rgb(94, 14, 14)">Các Loại nước Khác</i></i><i class="hoahoc" style="width:700px; height:50px; display:block; background-color:rgb(94, 14, 14); border:none; border-radius: 10px; margin-bottom: 5px;"></i>
+          </div>
+
+          <div>
+            <i style="position:fixed; font-size:40px; color:white"><i id="city-count"> 30</i><i>%</i><i id= "nuocEp" style="margin-left: 230px;color: green">Các Loại nước ép</i></i><i class="tunhien" style="width:300px; height:50px; display:block; background-color:green; border:none; border-radius: 10px; margin-bottom: 5px;"></i>
+          </div>
+    
+        </div>
+        <h2 style="margin-top: 50px;">THỐNG KÊ TỪ 5 CỬA HÀNG NƯỚC GIẢI KHÁT LỚN TẠI TP HỒ CHÍ MINH</h2>
+        <h2 style="margin-left: 380px;">TỪ 2015-2020</h2>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(e){
+            $(".tunhien").animate({
+                width:"600px",
+            },
+            3000
+            );
+            $("#nuocEp").animate({
+                marginLeft: "530px",
+            },
+            3000
+            );
+            $(".hoahoc").animate({
+                width:"400px",
+                value:40,
+            },
+            3000
+            );
+            $("#nuocKhac").animate({
+                marginLeft:"330px",
+            },
+            3000
+            );
+        })
+
+        function animateNumber(finalNumber, delay, startNumber = 0, callback) {
+        let currentNumber = startNumber
+        const interval = window.setInterval(updateNumber, delay)
+        function updateNumber() {
+        if (currentNumber >= finalNumber) {
+        clearInterval(interval)
+        } else {
+        currentNumber++
+        callback(currentNumber)
+        }}};
+        function animateNumber_(finalNumber, delay, startNumber = 0, callback) {
+        let currentNumber = startNumber
+        const interval = window.setInterval(updateNumber, delay)
+        function updateNumber() {
+            if (currentNumber <= finalNumber) {
+            clearInterval(interval)
+            } else {
+            currentNumber--
+            callback(currentNumber)
+            }
+        }
+        };
+
+            document.addEventListener('DOMContentLoaded', function () {
+        animateNumber(100, 1, 0, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('transaction-count').innerText = formattedNumber
+        })
+        
+        animateNumber(60, 100, 30, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('city-count').innerText = formattedNumber
+        })
+        
+        animateNumber_(40, 100, 70, function (number) {
+            const formattedNumber = number.toLocaleString()
+            document.getElementById('customer-count').innerText = formattedNumber
+        })
+        })
+
+    </script>
+</body>
+</html>
